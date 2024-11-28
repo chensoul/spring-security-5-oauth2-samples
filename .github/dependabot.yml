@@ -14,6 +14,7 @@ updates:
       interval: "daily"
       time: "07:00"
       timezone: "Asia/Shanghai"
-    allow:
+    ignore:
       - dependency-name: "org.springframework*"
-        dependency-type: "all"
+        update-types:
+          - "version-update:semver-major"
